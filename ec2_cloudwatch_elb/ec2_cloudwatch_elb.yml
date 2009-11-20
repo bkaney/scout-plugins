@@ -1,0 +1,53 @@
+options:
+  aws_access_key:
+    name: AWS Access Key
+    notes: Your Amazon Web Services Access key. 20-char alphanumeric, looks like 022QF06E7MXBSH9DHM02
+  aws_secret:
+    name: AWS Secret
+    notes: Your Amazon Web Services Secret key. 40-char alphanumeric, looks like kWcrlUX5JEDGMLtmEENIaVmYvHNif5zBd9ct81S
+  dimension:
+    name: LoadBalancerName or dimension
+    notes: Get your LoadBalancerName from the AWS web console or command line tools. OR, specify any dimension as key=value. For example, LoadBalancerName=ProductionBalancer. See README.
+
+
+metadata:
+  HealthyHostCount max:
+    label: Number of healthy instances (max)
+    units:
+    precision: 0
+  HealthyHostCount min:
+    label: Number of healthy instances (min)
+    units:
+    precision: 0
+  HealthyHostCount avg:
+    label: Number of healthy instances (avg)
+    units:
+    precision: 0
+  UnHealthyHostCount max:
+    label: Number of unhealthy instances (max)
+    units:
+    precision: 0
+  UnHealthyHostCount min:
+    label: Number of unhealthy instances (min)
+    units:
+    precision: 0
+  UnHealthyHostCount avg:
+    label: Number of unhealthy instances (avg)
+    units:
+    precision: 0
+  RequestCount sum:
+    label: Number of requests per second (sum)
+    units:
+    precision: 0
+  Latency max:
+    label: Time between request and response second (max)
+    units:
+    precision: 4
+  Latency min:
+    label: Time between request and response second (min)
+    units:
+    precision: 4
+  Latency avg:
+    label: Time between request and response second (avg)
+    units:
+    precision: 4

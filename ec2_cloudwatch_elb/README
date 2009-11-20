@@ -1,0 +1,18 @@
+EC2 CloudWatch plugin - ELB Version
+===================================
+Created by Brian Kaney using original by Andre Lewis
+
+This plugin uses AWS web service calls to fetch the following CloudWatch metrics for your ELB's:
+
+  HealthyHostCount Latency RequestCount UnHealthyHostCount
+
+Using this plugin, you can graph CloudWatch data, create alerts on CloudWatch, track trends  on CloudWatch, etc.
+Your Cloudwatch data will appear alongside all the other data collected by the Scout agent.
+
+
+Fetching metrics for one load balancer
+--------------------------------------
+
+By default, the value you put in the "LoadBalancerName or dimension or dimension" plugin option is treated as an
+load balancer name.
+
